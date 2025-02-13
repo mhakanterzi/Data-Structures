@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Data_Structures;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -108,6 +109,7 @@ public class DoubleLinkedList
 
     public void StartLinkedList()
     {
+        Console.Clear();
         //Creating linked list
         Node head = new Node(1);
         head.next = new Node(2);
@@ -132,5 +134,9 @@ public class DoubleLinkedList
         Console.WriteLine("Deleting Last column. (Deleting tail. new tail is preview to tail)");
         head = DeleteTail(head);
         PrintList(head);
+        Console.ReadKey();
+
+        Program program = new Program();
+        program.MainMenu();
     }
 }

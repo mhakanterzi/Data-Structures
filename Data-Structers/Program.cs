@@ -17,10 +17,11 @@ namespace Data_Structures
         public void MainMenu()
         {
             DoubleLinkedList doubleLinkedList = new DoubleLinkedList();
+            StackAndQueue stackAndQueue = new StackAndQueue();
 
             string prompt = " ";
 
-            string[] options = { "1- Double Linked List", "2-  Stack and Queue", "3- Hash Table ", "4- B+ Tree ", "5- BFS, DFS ", "6- Heap Sort ", "Çıkış" };
+            string[] options = { "1- Double Linked List", "2- Stack and Queue", "3- Hash Table ", "4- B+ Tree ", "5- BFS, DFS ", "6- Heap Sort ", "Çıkış" };
             MenuControl main = new MenuControl(options, prompt);
             int SelectedIndex = main.Run();
 
@@ -30,6 +31,7 @@ namespace Data_Structures
                     doubleLinkedList.StartLinkedList();
                     break;
                 case 1:
+                    stackAndQueue.Run();
                     break;
                 case 2:
                     break;
