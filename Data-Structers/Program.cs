@@ -21,6 +21,7 @@ namespace Data_Structures
             DoubleLinkedList doubleLinkedList = new DoubleLinkedList();
             StackAndQueue stackAndQueue = new StackAndQueue();
             HashTable hashTable = new HashTable();
+            BFSandDFS bFSandDFS = new BFSandDFS();  
 
             string prompt = " ";
 
@@ -39,9 +40,11 @@ namespace Data_Structures
                 case 2:
                     hashTable.Hash();
                     break;
-                case 3: 
+                case 3:
                     break;
                 case 4:
+                    bFSandDFS.StartBFS();
+                    bFSandDFS.StartDFS();
                     break;
                 case 5: 
                     break;
