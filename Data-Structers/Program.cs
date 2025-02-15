@@ -22,6 +22,7 @@ namespace Data_Structures
             StackAndQueue stackAndQueue = new StackAndQueue();
             HashTable hashTable = new HashTable();
             BFSandDFS bFSandDFS = new BFSandDFS();  
+            HeapSort heapSort = new HeapSort();
 
             string prompt = " ";
 
@@ -46,7 +47,8 @@ namespace Data_Structures
                     bFSandDFS.StartBFS();
                     bFSandDFS.StartDFS();
                     break;
-                case 5: 
+                case 5:
+                    heapSort.Start();
                     break;
                 case 6:
                     Console.Write("\nÇıkmak için herhangi bir tuşa basınız... ");
