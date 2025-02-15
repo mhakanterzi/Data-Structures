@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Data_Structures.Structures;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,6 +20,7 @@ namespace Data_Structures
         {
             DoubleLinkedList doubleLinkedList = new DoubleLinkedList();
             StackAndQueue stackAndQueue = new StackAndQueue();
+            HashTable hashTable = new HashTable();
 
             string prompt = " ";
 
@@ -34,6 +37,7 @@ namespace Data_Structures
                     stackAndQueue.Run();
                     break;
                 case 2:
+                    hashTable.Hash();
                     break;
                 case 3: 
                     break;
