@@ -23,10 +23,11 @@ namespace Data_Structures
             HashTable hashTable = new HashTable();
             BFSandDFS bFSandDFS = new BFSandDFS();  
             HeapSort heapSort = new HeapSort();
+            BST bST = new BST();
 
             string prompt = " ";
 
-            string[] options = { "1- Double Linked List", "2- Stack and Queue", "3- Hash Table ", "4- B+ Tree ", "5- BFS, DFS ", "6- Heap Sort ", "Çıkış" };
+            string[] options = { "1- Double Linked List", "2- Stack and Queue", "3- Hash Table ", "4- Binary Search Tree ", "5- BFS, DFS ", "6- Heap Sort ", "Çıkış" };
             MenuControl main = new MenuControl(options, prompt);
             int SelectedIndex = main.Run();
 
@@ -42,6 +43,7 @@ namespace Data_Structures
                     hashTable.Hash();
                     break;
                 case 3:
+                    bST.Run();
                     break;
                 case 4:
                     bFSandDFS.StartBFS();
